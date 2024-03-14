@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Equation Plotter</title>
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Function Plotter</h1>
+    </div>
+    <div id="container">
+        <div id="user-input">
+            <div class="input-parameters">
+                <p>
+                    <label>A :</label>
+                    <input id="para-A" type="number" required>
+                </p>
+                <p>
+                    <label>B :</label>
+                    <input id="para-B" type="number" required>
+                </p>
+                <p>
+                    <label>C :</label>
+                    <input id="para-C" type="number" required>
+                </p>
+                <p>
+                    <label>K :</label>
+                    <input id="para-k" type="number" required>
+                </p>
+                <hr>
+                <h4>Select the range for X :</h4>
+                <p>
+                    <label>Start:</label>
+                    <input id="start-X" type="number" required>
+                </p>
+                <p>
+                    <label> End: </label>
+                    <input id="end-X" type="number" required>
+                </p>
+
+            </div>
+            <button onclick="plotEquation()">PLOT</button>
+        </div>
+
+        <div id="plot"></div>
+    </div>
+
+</body>
+
+</html>
